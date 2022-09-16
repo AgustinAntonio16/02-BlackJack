@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'verde-gapy': '#5BB033',
-        'pink1' : '#917691',
-        'ping-bg': '#fff6ff',
-        'green-complement': '#e0ffe0',
+        'backGrownPrincipal': '#fdcae1',
+        'secondaryColor' : '#cafde6',
+        'Buttons': '#8f6277',
+        'ButtonPrincipal': '#fff',
 
 
       },

@@ -1,10 +1,18 @@
+import ButtonsGame from "./components/ButtonsGame"
+import GamePlaces from "./components/GamePlaces"
+import Header from "./components/Header"
+import UserState from "./context/UserState"
+
+import shuffle from 'underscore/modules/shuffle.js'
 
 function App() {
-
+  
   return (
-    <div>
-     <h1 className="bg-black">Hola</h1>
-    </div>
+    <UserState>
+     <Header/>
+     <ButtonsGame/>
+     <GamePlaces/>
+    </UserState>
   )
 }
 
