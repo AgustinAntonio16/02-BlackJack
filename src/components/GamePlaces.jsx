@@ -6,21 +6,22 @@ const Card2 = new URL("../assets/2D.png", import.meta.url);
 
 const GamePlaces = () => {
 
-  const {saludo} = useContext(UserContext)
+  const {playerPoints, newCard} = useContext(UserContext)
+  console.log("desde GamePlaces" + playerPoints)
   const location = "GamePlaces"
 
-  useEffect(() =>{
-    saludo(location)
-  },[])
+  // useEffect(() =>{
+  //   saludo(location)
+  // },[])
   
   return (
     <div>
-        <h1 className='font-bold text-xl mx-4 '>Jugador 1</h1>
-        <div className='h-96 flex relative'>
-            <img className="h-80 m-6 absolute" src={Card1}/>
-            <img className="h-80 m-6 absolute mx-20 " src={Card1}/>
+        <h1 className='font-bold text-xl mx-4 '>Jugador 1 <small> {playerPoints} </small></h1>
+        <div id = "cardsPlayer" className='h-96 flex relative'>
+            {/* <img className="card" src={Card1}/> */}
+            {/* <img className="h-80 m-6 absolute mx-20 " src={Card1}/>
             <img className="h-80 m-6 absolute mx-40 " src={Card1}/>
-            <img className="h-80 m-6 absolute mx-60 " src={Card1}/>
+            <img className="h-80 m-6 absolute mx-60 " src={Card1}/> */}
         </div>
 
         <h1 className='font-bold text-xl mx-4 '>Computadora</h1>

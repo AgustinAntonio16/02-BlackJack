@@ -11,3 +11,7 @@
 .btn-primary{
     @apply bg-purple-600 hover:bg-purple-700 text-white
 }
+
+.card{
+    @apply h-80 m-6 absolute
+}

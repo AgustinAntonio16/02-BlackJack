@@ -3,12 +3,12 @@ import UserContext from '../context/UserContext'
 
 const Header = () => {
   
-  const {saludo} = useContext(UserContext)
+  //const {saludo} = useContext(UserContext)
   const location = "Header"
 
-  useEffect(() =>{
-    saludo(location)
-  },[])
+  // useEffect(() =>{
+  //   saludo(location)
+  // },[])
 
   return (
     <div>
